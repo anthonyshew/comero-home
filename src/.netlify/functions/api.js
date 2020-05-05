@@ -16,7 +16,7 @@ router.post('/contact-us', (req, res) => {
     const emailMessage = {
         to: process.env.EMAIL_CONTACT,
         from: process.env.EMAIL_CONTACT,
-        replyTo: email
+        replyTo: email,
         subject: `Interested in Comero, the restaurant website creation tool?`,
         html: `<div><p>Hi. I'd like to improve my restaurant's website. How can I do that?</p><div>
     <br />
