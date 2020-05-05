@@ -1,0 +1,70 @@
+@import "global.scss";
+
+.email-signup {
+    width: 100%;
+    padding-top: 2rem;
+    text-align: center;
+
+    .email {
+        width: 85%;
+        border: 2px solid $blue;
+        border-top-left-radius: .5rem;
+        border-bottom-left-radius: .5rem;
+        font-family: $zilla;
+        font-size: 24px;
+
+        &::placeholder {
+            text-align: center;
+        }
+    }
+
+    .honeypot {
+        width: 0;
+        height: 0;
+    }
+
+    .submit {
+        border-top-right-radius: .5rem;
+        border-bottom-right-radius: .5rem;
+        background-color: $red;
+        color: $white;
+        font-family: $poppins;
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    .email,
+    .submit {
+        padding: .5rem .8rem;
+    }
+
+    .submit {
+        cursor: pointer;
+    }
+
+    .error,
+    .error-placeholder {
+        height: 18px;
+        margin-top: .3rem;
+        margin-bottom: 1rem;
+        color: $red;
+        font-family: $poppins;
+    }
+
+    .error {
+        opacity: 0;
+        animation: fadeInAndUp .5s ease forwards;
+
+        @keyframes fadeInAndUp {
+            0% {
+                opacity: 0;
+                transform: translateY(25px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    }
+}
