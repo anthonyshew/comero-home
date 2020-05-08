@@ -87,7 +87,7 @@ export default ({ location }) => {
                     We create the platform for your website. Creating a layout, making sure things look pretty, and all the other big stuff we will have done for you. We'll even get the magic internet gnomes put into a row and working for you for the best performance the web has to offer.
                 </Chunk>
                 <Chunk stepHeader="Step 3: Make it Yours ✍🏼">
-                    Edit your restaurant’s content and it will show up on your website formatted and laid out as beautiful as you always wanted it. Your menu, hours, address, phone number, your restaurant on the web.
+                    Edit your restaurant’s content and it will show up on your website formatted and laid out as beautiful as you always wanted it. Your menu, hours, address, phone number, your restaurant on the web. In about 15 minutes of your time, your restaurant will have the website it deserves.
                 </Chunk>
             </section>
 
