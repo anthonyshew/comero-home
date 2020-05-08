@@ -11,6 +11,9 @@ module.exports = {
     },
     description: `The easiest restaurant template ever.`,
     siteUrl: `${process.env.ROOT_URL}`,
+    social: {
+      twitter: "/theunrealashew"
+    }
   },
   developMiddleware: app => {
     app.use(
