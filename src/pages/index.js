@@ -80,10 +80,10 @@ export default ({ location }) => {
 
             <section id="how-it-works" className="how-it-works">
                 <h2>How It Works</h2>
-                <Chunk stepHeader="Step 1: Contact Us ☎">
+                <Chunk stepHeader="Step 1: Contact Us 📞">
                     Let us know you want to create your restaurant’s shiny, new web presence and we’ll do the heavy lifting of setting you up. We'll handle your domain setup, DNS configuration, and get things working behind the scenes.
                 </Chunk>
-                <Chunk stepHeader="Step 2: Setup 🛠">
+                <Chunk stepHeader="Step 2: Setup 🔨">
                     We create the platform for your website. Creating a layout, making sure things look pretty, and all the other big stuff we will have done for you. We'll even get the magic internet gnomes put into a row and working for you for the best performance the web has to offer.
                 </Chunk>
                 <Chunk stepHeader="Step 3: Make it Yours ✍🏼">
