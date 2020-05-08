@@ -1,6 +1,8 @@
 # Comero: The Simplest Restaurant Website Builder Ever
 > Add your restaurant's menu, hours, location, and other info into a form. Next, ...no, wait, you're done.
 
+![Comero Logo](content/assets/logo-color.png)
+
 ## The Stack
 - React
 - Gatsby
