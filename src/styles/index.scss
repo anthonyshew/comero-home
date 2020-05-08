@@ -29,7 +29,7 @@
 
 .hero {
     position: relative;
-    height: 90vh;
+    height: 95vh;
     margin-bottom: 4rem;
 
     .hero-background {
@@ -93,6 +93,7 @@
 
 .message {
     h3 {
+        margin: 0 2rem;
         font-family: $poppins;
         font-size: 48px;
         font-weight: 700;
@@ -143,6 +144,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    margin-top: 1rem;
 
     .image-wrap,
     .text-wrap {
@@ -163,6 +165,7 @@
     }
 
     a {
+        display: inline-block;
         padding: 2rem;
         border-radius: 1rem;
         background-color: $red;
@@ -178,6 +181,7 @@
     margin-top: 2rem;
 
     h2 {
+        margin: 0 1rem;
         font-family: $poppins;
         font-weight: 700;
         font-size: 48px;
@@ -290,6 +294,107 @@
         .hero-background {
             min-width: 3000px;
         }
+
+        h2 {
+            width: 33%;
+            color: $white;
+            bottom: 15%;
+        }
+
+        .flex {
+            .value-proposition {
+                font-size: 36px;
+            }
+
+            .right {
+                justify-content: center;
+
+                .container {
+                    margin-top: 0;
+                    margin-bottom: 125px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .hero {
+
+        h2 {
+            bottom: 10%;
+        }
+    }
+}
+
+@media (max-width: 472px) {
+    .header {
+        .navbar {
+            margin-top: 4px;
+
+            h1 {
+                width: 100%;
+                text-align: center;
+
+            }
+        }
+    }
+
+    .hero {
+        .flex {
+            flex-direction: column;
+
+            h2 {
+                top: 4px;
+                bottom: initial;
+                left: 0;
+                width: 100%;
+                text-align: center;
+                font-size: 20px;
+            }
+
+            .left,
+            .right {
+                width: 70%;
+                height: initial;
+            }
+
+            .right {
+                margin-top: 5%;
+
+                .container {
+                    margin-bottom: 0;
+                }
+            }
+
+            .svg-wrap {
+                width: 75%;
+            }
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .hero {
+        .flex {
+            .value-proposition {
+                font-size: 36px;
+
+                .checkmark {
+                    width: 36px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 340px) {
+    .hero {
+        .flex {
+            h2 {
+                display: none;
+            }
+        }
     }
 }
 
@@ -318,6 +423,70 @@
             &:last-of-type {
                 margin-right: 40px;
             }
+        }
+    }
+}
+
+//Message breakpoints
+
+@media (max-width: 555px) {
+    .message {
+        h3 {
+            font-size: 36px;
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .message {
+        h3 {
+            font-size: 30px;
+        }
+    }
+}
+
+@media (max-width: 360px) {
+    .message {
+        h3 {
+            font-size: 26px;
+        }
+    }
+}
+
+// Demo breakpoints
+
+@media (max-width: 755px) {
+    .demo {
+        flex-direction: column;
+
+        .image-wrap {
+            width: 33vw;
+            min-width: 280px;
+        }
+
+        .text-wrap {
+            margin-top: 2rem;
+            width: 100%;
+
+            h2 {
+                margin-bottom: 1rem;
+            }
+        }
+
+        a {
+            font-size: 28px;
+        }
+    }
+}
+
+// Pricing breakpoints
+
+@media (max-width: 500px) {
+    .pricing {
+        margin: 4rem 1rem;
+
+        p {
+            margin-left: 1rem;
         }
     }
 }

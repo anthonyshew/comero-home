@@ -4,18 +4,13 @@ require('dotenv').config()
 
 module.exports = {
   siteMetadata: {
-    title: `Smokehouse Grill Restaurant`,
+    title: `Comero`,
     author: {
       name: `Anthony Shew`,
-      summary: `who develops things.`,
+      summary: `who develops web apps and websites.`,
     },
-    description: `The easiest restaurant template out there.`,
+    description: `The easiest restaurant template ever.`,
     siteUrl: `${process.env.ROOT_URL}`,
-    social: {
-      twitter: `/adoptmilbplayer`,
-      facebook: `/groups/218122932877473/`,
-      instagram: `/adoptanmilbplayer/`,
-    },
   },
   developMiddleware: app => {
     app.use(

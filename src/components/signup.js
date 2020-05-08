@@ -1,6 +1,8 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import "../styles/signup.scss"
 import { useForm } from 'react-hook-form'
+
+import { useAnimateOnVisible } from "../hooks/useAnimateOnVisible"
 
 import Spinner from '../svg/spinner.svg'
 import Checkmark from '../svg/checkmark.svg'
@@ -10,6 +12,9 @@ export default ({ ...props }) => {
     const [backendError, setBackendError] = useState(false)
     const [formSuccess, setFormSuccess] = useState(false)
     const { register, handleSubmit, errors, reset } = useForm()
+
+    const form = useRef(null)
+    useAnimateOnVisible({ element: form })
 
     const onSubmit = (data) => {
         setFormPending(true)
@@ -35,7 +40,7 @@ export default ({ ...props }) => {
     }
 
     return (
-        <form className="email-signup" onSubmit={handleSubmit(onSubmit)}>
+        <form className="email-signup" onSubmit={handleSubmit(onSubmit)} ref={form}>
             <input
                 type="text"
                 name="email"

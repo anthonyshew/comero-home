@@ -2,12 +2,14 @@ import React from "react"
 import '../styles/reset.scss'
 import '../styles/global.scss'
 
+import { useMediaQuery } from "../hooks/useMediaQuery"
+
 import ReturnToTop from "./returnToTop"
 
 const Layout = ({ children }) => {
     let header, footer
 
-    header = <Navbar />
+    header = useMediaQuery("(min-width: 950px)") ? <Navbar /> : <nav id="home" className="navbar"><h1 className="logo">Comero</h1></nav>
     footer = (
         <>
             <ReturnToTop />

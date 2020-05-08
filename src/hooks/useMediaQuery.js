@@ -4,10 +4,12 @@ import { useState, useEffect } from 'react'
 
 export const useMediaQuery = (mediaQuery) => {
 
-    if (typeof window !== 'undefined') {
-        const [isVerified, setIsVerified] = useState(!!window.matchMedia(mediaQuery).matches)
 
-        useEffect(() => {
+    const [isVerified, setIsVerified] = useState(typeof window !== 'undefined' ? !!window.matchMedia(mediaQuery).matches : false)
+    // const [isVerified, setIsVerified] = useState(!!window.matchMedia(mediaQuery).matches)
+
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
             const mediaQueryList = window.matchMedia(mediaQuery)
             const documentChangeHandler = () => setIsVerified(!!mediaQueryList.matches)
 
@@ -17,10 +19,10 @@ export const useMediaQuery = (mediaQuery) => {
             return () => {
                 mediaQueryList.removeListener(documentChangeHandler)
             }
-        }, [mediaQuery])
 
-        return isVerified
-    }
+        }
+        return null
+    }, [mediaQuery])
 
-    return null
+    return isVerified
 }
