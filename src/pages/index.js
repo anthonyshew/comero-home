@@ -8,6 +8,7 @@ import Logo from "../svg/logo.svg"
 import Checkmark from "../svg/checkmark.svg"
 
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 import Signup from "../components/signup"
 
 export default ({ location }) => {
@@ -26,6 +27,11 @@ export default ({ location }) => {
 
     return (
         <Layout location={location}>
+            <SEO title="Comero - The Website Builder for Restaurants">
+                <meta name="og:image" content="/content/assets/logo-color.jpg" />
+                <meta name="twitter:image" content="/media/logo-color.jpg" />
+                <meta name="twitter:image:alt" content="Comero - The Website Builder for Restaurants" />
+            </SEO>
             <section className="hero">
                 <HeroBackground />
                 <div className="flex">
