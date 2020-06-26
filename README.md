@@ -8,6 +8,7 @@
 - Gatsby
 - Netlify
 - Netlify CMS
+- AWS Lambda
 
 ## How It Works
 > Just bring Comero you're content and you're done.
