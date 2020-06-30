@@ -100,8 +100,8 @@ export default ({ location }) => {
 
             <section id="pricing" className="pricing">
                 <h2>Pricing</h2>
-                <h3>Startup Fee: $0</h3>
-                <p>We want our platform to be accessible to all local eateries. And we believe having no up front cost is a step in that direction.</p>
+                {/* <h3>Startup Fee: $0</h3>
+                <p>We want our platform to be accessible to all local eateries. And we believe having no up front cost is a step in that direction.</p> */}
                 <h3>Subscription: $50/month</h3>
                 <p>Unlimited content updates, our fastest servers, and our support if you ever need it. We know you’ll end up with more than $50 of orders per month coming directly from your website to cover your costs!</p>
                 <h3>Online Ordering: $1/order</h3>
